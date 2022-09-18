@@ -1,0 +1,19 @@
+pipeline{
+ageny any
+stages{
+stage('build'){
+steps{
+echo 'Buildeing the pipeline'
+}
+stage('Testing'){
+echo 'testing the declarative'
+}
+stage('Deploy'){
+echo 'deploy the build'
+}
+stage('Release'){
+echo 'Release the pipeline'
+}
+}
+}
+}
