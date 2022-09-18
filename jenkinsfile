@@ -1,17 +1,23 @@
-pipeline{
-ageny any
-stages{
-stage('build'){
-steps{
+pipeline {
+agent any
+stages {
+stage('build') {
+steps {
 echo 'Buildeing the pipeline'
 }
-stage('Testing'){
+}
+stage('Testing') {
+steps {
 echo 'testing the declarative'
 }
-stage('Deploy'){
+}
+stage('Deploy') {
+steps {
 echo 'deploy the build'
 }
-stage('Release'){
+}
+stage('Release') {
+steps {
 echo 'Release the pipeline'
 }
 }
